@@ -1,0 +1,35 @@
+ion-card {
+    margin-top: 20px;
+  }
+  
+  canvas {
+    width: 100% !important;
+   max-height: 270px
+  }
+  
+  ion-card {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    ion-card {
+      margin: 5px;
+    }
+  
+    canvas {
+      width: 100%;
+      height: 150px;
+    }
+  }
+
+  :host {
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+  }
+  
+  canvas {
+    flex-grow: 1; 
+    width: 100%; 
+    height: auto;
+  }

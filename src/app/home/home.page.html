@@ -1,0 +1,69 @@
+<!-- 
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="full-height">
+     
+      <ion-col size="12" size-md="3" class="component1 flex-column">
+        <app-course-info></app-course-info>
+      </ion-col>
+
+      
+      <ion-col size="12" size-md="9" class="flex-column">
+        <ion-row class="component2 flex-grow">
+         
+          <ion-col size="12">
+            <app-assessment-progress></app-assessment-progress>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="component3 flex-grow">
+        
+          <ion-col size="12">
+            <app-student-attendance></app-student-attendance>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+ -->
+
+
+
+ 
+
+ <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title><b>Course Evaluation Report</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <!-- Course Info (Left Sidebar) -->
+      <ion-col size="12"  class="course-info-col" appDynamicColResize>
+        <app-course-info></app-course-info>
+      </ion-col>
+
+      <ion-col size="12"  class="content-col" appDynamicColResize>
+        <ion-row>
+          <!-- Assessment Progress -->
+          <ion-col size="12">
+            <app-assessment-progress></app-assessment-progress>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <!-- Student Attendance -->
+          <ion-col size="12">
+            <app-student-attendance></app-student-attendance>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
